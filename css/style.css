@@ -3,14 +3,56 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    /* font-size: 68,5px; */
+    font-family: 'Inter', sans-serif;
 }
 
 body{
     background-color: rgb(208, 205, 201);
 }
 
-.text-container{
+header{
+    height: 15vh;
+    width: 100%;
+    /* background-color: rgb(80, 80, 80); */
+    display: flex;
+    justify-items: center;
+    font-size: 3vh;
+}
+
+.title-container{
+    height: auto;
+    width: 100vw;
+    display: flex;
+}
+
+.title{
+    width: 100%;
+    /* color: #FFFFFF; */
+    color: #858585;
+    /* padding: 0 0 0 3vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.line-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    height: 1px;
+    width: 90%;
+    border-width: 0;
+    /* background-color:#858585; */
+    background-color:#FFFFFF;
+}
+
+/* .text-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +63,7 @@ body{
     font-size: 6vh;
     font-weight: 500;
     color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .img-container{
@@ -32,5 +75,100 @@ body{
 
 .img-test{
     height: 80vh;
-    width: 80wh;
+    width: 80vw;
+} */
+
+ /* ----------------------------------------------- */
+
+/* main .background{
+    background-image: url('img/test3.png');  Inserir IMG 
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 8rem);
+    background-color: red;
+} */
+
+main{
+    height: calc(100vh - 8rem);
+    /* background-color: red; */
+}
+
+@media (max-width: 796px){
+    main .background{
+        background-image: url('img/test3.png');
+    }
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 0.75rem 0 0.75rem;
+    /* background-color: blueviolet; */
+}
+
+/* Card */
+
+.card{
+    width: calc(100% / 3);
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0 0 2rem 0;
+    /* background-color: red; */
+}
+
+@media (max-width: 796px){
+    .card{
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 577px){
+    .card{
+        width: 100%;
+    }
+}
+
+.card-image{
+    width: 100%;
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 1rem 0;
+    cursor: pointer;
+    filter: grayscale(90%) blur(1px);
+}
+
+.card-image:hover{
+    width: 100%;
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 1rem 0;
+    cursor: pointer;
+    filter: grayscale(0%) blur(0px);
+}
+
+/* .mouse:hover{
+    filter: blur(1rem);
+} */
+
+.card-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 .25rem 0;
+    /* color: #FFFFFF; */
+    color: #858585;
+}
+
+.card-info{
+    text-align: center;
+    /* color: #858585; */
+    color: #FFFFFF;
+}
+
+#blur{
+    height: max-content;
+    width: max-content;
 }
